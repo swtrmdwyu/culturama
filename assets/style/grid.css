@@ -28,6 +28,7 @@
 }
 
 .eventos__item h3 {
+    align-self: center;
     grid-area: nome;
 }
 
@@ -40,6 +41,7 @@
 }
 
 .eventos__item button {
+    align-self: end;
     grid-area: botao;
 }
 
@@ -61,6 +63,7 @@
 }
 
 .agenda__atracao {
+    align-self: center;
     grid-area: atracao;
 }
 
