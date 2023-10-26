@@ -51,6 +51,16 @@
     max-width: 400px;
 }
 
+.rodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.rodape__logo {
+    align-self: end;
+}
+
 @media screen and (min-width: 720px) {
     .menu {
         column-gap: 75px;
@@ -96,5 +106,5 @@
     .menu__item:nth-child(5) {
         order: 2;
     }
-    
+
 }
