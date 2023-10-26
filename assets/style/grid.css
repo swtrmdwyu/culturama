@@ -43,6 +43,27 @@
     grid-area: botao;
 }
 
+.agenda__item {
+    display: grid;
+    grid-template-areas: 
+        "imagem imagem"
+        "informacoes atracao";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.agenda__item img {
+    grid-area: imagem;
+}
+
+.agenda__informacoes {
+    grid-area: informacoes;
+}
+
+.agenda__atracao {
+    grid-area: atracao;
+}
+
 @media  screen and (min-width: 720px) {
 
     .banner {

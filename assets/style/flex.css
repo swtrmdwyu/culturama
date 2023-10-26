@@ -37,6 +37,20 @@
     max-width: 400px;
 }
 
+.agenda__lista {
+    align-items: center;
+    column-gap: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 1rem;
+}
+
+.agenda__item {
+    flex-grow: 1;
+    max-width: 400px;
+}
+
 @media screen and (min-width: 720px) {
     .menu {
         column-gap: 75px;
@@ -49,7 +63,11 @@
     }
 
     .eventos__lista {
-        justify-content: flex-end;
+        justify-content: end;
+    }
+
+    .agenda__lista {
+        justify-content: end;
     }
 }
 
@@ -78,4 +96,5 @@
     .menu__item:nth-child(5) {
         order: 2;
     }
+    
 }
