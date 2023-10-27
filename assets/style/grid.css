@@ -86,3 +86,35 @@
 
     
 }
+
+@media screen and (min-width: 1440px) {
+    .categorias {
+        display: grid;
+        column-gap: 1.5rem;
+        grid-template-areas:
+             "titulo titulo"
+             "eventos subtitulo"
+             "eventos destaque";
+        grid-template-columns: calc(50% - 0.75rem);
+        grid-template-rows: auto 1fr auto;
+        row-gap: 1rem;
+    }
+
+    .categorias__titulo {
+        grid-area: titulo;
+    }
+
+    .categorias__lista {
+        align-self: end;
+        justify-content: flex-end;
+        grid-area: eventos;
+    }
+
+    .categorias__destaques {
+        grid-area: subtitulo;
+    }
+
+    .categorias__imagem {
+        grid-area: destaque;
+    }
+}
